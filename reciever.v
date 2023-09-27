@@ -32,7 +32,7 @@ module Reciever
 						 always @ (posedge clk,negedge reset_n)
 						 begin
 							
-							if (~reset_n)
+							 if (!reset_n)
 							begin
 								
 								present_state <= idle;
@@ -71,7 +71,7 @@ module Reciever
 								
 								idle:                                      // First state in which the transmitter prepared to transmit the data
 								begin
-									if (~rx)
+									if (!rx)
 									begin
 								
 										s_next = 0;
