@@ -1,8 +1,14 @@
 # UART
-🔹 **UART Module:** This project involved creating a UART module from scratch, which is a fundamental component in many communication systems.
+🔹 **UART Module:** This project involved creating a UART module from the ground up, a vital component in many communication systems.
 
-🔹 **Transmitter & Receiver:** The heart of the UART module is its transmitter and receiver components, each featuring four distinct states: Idle, Start, Transmit, and Stop. These states are crucial in ensuring reliable serial data communication.
+🔹 **Transmitter & Receiver:** The core of the UART module comprises a transmitter and receiver, each featuring four distinct states: 
+   - **Idle:** The initial state where the transmitter and receiver are waiting for data.
+   - **Start:** The state where the transmitter begins sending data and the receiver prepares to receive it.
+   - **Transmit:** During this state, data is transmitted bit by bit from the transmitter to the receiver.
+   - **Stop:** The final state where the transmitter and receiver conclude the data transmission.
 
-🔹 **FIFO (First-In-First-Out) Buffer:** To handle data efficiently, I incorporated a FIFO buffer into the design. This buffer helps in managing data between the transmitter and receiver, ensuring smooth and synchronized data flow.
+These four states play a crucial role in ensuring reliable serial data communication.
 
-🔹 **Baud Rate Generator:** A critical aspect of UART communication is setting the correct baud rate. I integrated a baud rate generator to enable communication at different data rates as per the project's requirements.
+🔹 **FIFO (First-In-First-Out) Buffer:** To efficiently manage data, I integrated a FIFO buffer into the design. This buffer ensures seamless data flow between the transmitter and receiver, enhancing overall system performance.
+
+🔹 **Baud Rate Generator:** Setting the correct baud rate is essential in UART communication. I incorporated a baud rate generator, allowing for flexible communication at various data rates as per project requirements.
