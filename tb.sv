@@ -1,4 +1,7 @@
-
+// Engineer: Yasser Mohamed
+// Create Date: 19/4/2024 
+// Module Name: tb
+// Project Name: UART
 
 module tb_UART;
     // Parameters
